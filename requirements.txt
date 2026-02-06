@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+minio
+pandas
+numpy
+scipy
+pyyaml
+cachetools
+python-multipart

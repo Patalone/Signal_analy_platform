@@ -1,0 +1,16 @@
+# Secrets / local env
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local data / runtime artifacts
+data/analysis_history.json
+
+# Archives / large artifacts
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2

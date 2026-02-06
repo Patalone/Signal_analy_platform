@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  signal-platform:
+    # 【关键修复】添加这一行，告诉它去哪里找 Dockerfile
+    build: . 
+    container_name: signal_platform
+    restart: unless-stopped
+    ports:
+      - "8899:8899"
+    volumes:
+      # 挂载代码，实现热更新
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1

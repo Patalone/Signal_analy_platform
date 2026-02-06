@@ -1,0 +1,25 @@
+service:
+  name: "signal-platform"
+  host: "0.0.0.0"
+  port: 8899
+
+minio:
+  endpoint: "192.168.112.133:9000"
+  access_key: "admin"
+  secret_key: "bangding123"
+  secure: false
+  data_bucket: "abbcsv"
+
+database:
+  host: "192.168.112.133"          
+  port: 3306
+  user: "root"
+  password: "bangding123"
+  db: "aisinglewell"
+
+history:
+  file_path: "data/analysis_history.json"
+
+cache:
+  ttl_seconds: 12000
+  max_items: 50
